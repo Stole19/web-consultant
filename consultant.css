@@ -1,0 +1,783 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+/****************
+
+    NAVIGATION
+
+*****************/
+
+
+#nav-bar {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+
+.navbar-brand {
+	height: 40px;
+	padding-left: 30px;
+}
+
+.navbar-nav li {
+	padding: 0 10px;
+}
+
+.navbar-nav li a {
+	float: right;
+	text-align: left;
+}
+
+#nav-bar ul li a {
+	color: #fff !important;
+}
+
+#nav-bar ul li a:hover {
+	color: #007bff !important;
+}
+
+.navbar {
+	background: #003e81;
+	transition: top 0.3s;
+}
+
+.navbar-toggler {
+	border: none !important;
+}
+
+.nav-link {
+	color: #555 !important;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+
+/****************
+
+    SLIDER
+
+*****************/
+
+#slider {
+	width: 100%;
+}
+
+.carousel-caption {
+	top: 45%;
+	transform: translateY(-50%);
+	bottom: initial !important;
+}
+
+.carousel-caption h5 {
+	color: #000;
+	text-shadow: .5px .5px .05px white;
+	font-size: 42px;
+}
+
+.carousel-inner {
+	width: 100%;
+	height: 670px;
+}
+
+.carousel-inner img {
+	width: 100%;
+	height: 100%;
+}
+
+.max-viewport {
+	min-height: 93vh;
+}
+
+
+
+@media (max-width: 480px) and (min-width: 320px) {
+
+	
+	.firstSlide {
+		height:130vh;
+		min-height: 100vh;
+		background: url(../images/Background_Bussines-1.jpg);
+		background-attachment: initial;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	.secondSlide {
+		height:130vh;
+		min-height: 100vh;
+		background: url(../images/Background_Bussines-2.jpg);
+		background-attachment: initial;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	.thirdSlide {
+		height:130vh;
+		min-height: 100vh;
+		background: url(../images/Background_Recruitment-Consultant.jpg);
+		background-attachment: initial;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+} 
+
+/****************
+
+    ABOUT
+
+*****************/
+
+#about{
+
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color:#555;
+
+}
+
+#about .btn{
+
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+
+.shadow-box{
+
+	display: inline-block;
+ 	vertical-align: middle;
+  	transform: perspective(1px) translateZ(0);
+  	box-shadow: 0 0 1px transparent;
+  	margin: 10px;
+  	transition-duration: 0.3s;
+  	transition-property: box-shadow, transform;
+}
+
+.shadow-box:hover,
+.shadow-box:focus,
+.shadow-box:active {
+  box-shadow: 1px 10px 10px -10px rgba(0, 0, 24, 0.5);
+  transform: scale(1.2);
+}
+
+
+.about-content{
+
+	padding-top: 20px;
+}
+
+
+.progress{
+
+	border-radius: 16px!important;
+	margin-bottom: 20px;
+}
+
+.progress-bar{
+
+	width: 80%;
+	border-radius: 16px;
+}
+
+.skills-bar p{
+
+margin-bottom:6px;
+font-weight: 600; 
+}
+
+
+@media (max-width: 480px) and (min-width: 320px) {
+
+	 #about{
+
+		padding-top:0;
+	} 
+}
+
+/****************
+
+    SERVICES
+
+*****************/
+
+
+#services{
+
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url('../images/OurServices_Background.jfif');
+	background-size: cover;
+	background-position: center;
+	color:#efefef!important;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#services h1{
+
+	text-align: center;
+	color:#efefef!important;
+	padding-bottom: 10px;
+}
+
+#services h1:after{
+
+	content: '';
+	background-color: #efefef;
+	display: block;
+	height: 3px;
+	width: 170px;
+	margin:20px auto 5px;
+}
+
+.services{
+
+	margin-top:40px;
+}
+
+.icon{
+
+	font-size: 40px;
+	margin: 20px auto;
+	padding: 10px;
+	height: 80px;
+	width: 80px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
+
+#services p{
+
+	font-size: 14px;
+	margin-top: 20px;
+	color:#ccc;
+}
+
+.services .col-md-3:hover{
+
+	background-color: #007bff;
+	cursor: pointer;
+	transition: .7s;
+}
+
+
+
+/****************
+
+    OUR TEAM
+
+*****************/
+
+#team{
+
+	padding-top:50px;
+	padding-bottom: 50px;
+	color:#555;
+
+}
+
+h1{
+
+	text-align: center;
+	color:#555;
+	padding-bottom: 10px;
+}
+
+h1::after{
+
+	content: '';
+	background: #007bff;
+	display:block;
+	height: 3px;
+	width: 170px;
+	margin: 20px auto 5px;
+}
+
+
+.profile-pic{
+
+	margin-top: 25px;
+}
+
+.profile-pic .img-box{
+
+opacity: 1;
+display: block;
+position: relative;
+}
+
+.profile-pic .img-box img{
+
+filter: grayscale(1);
+
+}
+
+.profile-pic .img-box img:hover{
+
+	filter: grayscale(0);
+	cursor: pointer;
+	
+}
+
+.profile-pic h2{
+
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 15px;
+	color:#007bff!important;
+}
+
+
+.profile-pic h3{
+
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 15px;
+}
+
+#team .fab{
+
+	height: 25px;
+	width: 25px;
+	color:#007bff!important;
+	background: #fff;
+	padding: 4px;
+	border-radius: 50%;
+}
+
+.img-box ul{
+
+	padding: 15px 0;
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	left:50%;
+	transform: translateX(-50%);
+	opacity: 0;
+}
+
+.img-box ul li{
+
+	padding: 5px;
+	display:inline-block;
+}
+
+.img-box:hover ul{
+
+	opacity: 1;
+}
+
+.img-box ul, .img-box ul li{
+
+	transition: .5s;
+}
+
+
+/****************
+
+    PROMO
+
+*****************/
+
+#promo{
+
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../images/Web_Consultant_Background.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	color:#fff;
+	text-align: center;
+	padding: 100px;
+	font-family: sans-serif;
+	font-size: 38px;
+}
+
+
+
+
+/****************
+
+    PRICE PLAN		
+
+*****************/
+
+#price{
+
+	padding: 40px 0;
+	background: #efefef;
+
+}
+
+.single-price{
+
+	margin: 10px auto;
+	display: inline;
+	float:left;
+	width:100%;
+	background-color: #fff;
+	transition: .5s;
+}
+
+.single-price:hover{
+
+	box-shadow: 0 2px 20px #333;
+}
+
+.price-head{
+
+	background-color: #2196f3;
+	display:inline;
+	float:left;
+	padding: 10px 5px;
+	text-align: center;
+	width:100%;
+}
+
+.price-head h2{
+
+	color:#fff;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	padding: 5px;
+	text-transform: uppercase;
+}
+
+.price-head p{
+
+	font-size: 25px;
+	color:#ccc;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+#price span{
+
+	font-size: 15px;
+}
+
+
+.price-content{
+
+	display:inline;
+	float:left;
+	width:100%;
+	padding: 5 15px;
+
+}
+
+.price-content ul li{
+
+	border-bottom: 1px solid #efefef;
+	padding: 10px 10px;
+	list-style: none;
+}
+
+ul li:last-child{
+
+	border:none;
+}
+
+.fa-check-circle{
+
+	color:green;
+	margin-right: 10px;
+	font-size: 20px;
+}
+
+.fa-times-circle{
+
+	color:red;
+	margin-right: 10px;
+	font-size: 20px;
+}
+
+.price-button{
+
+	display:inline;
+	float:left;
+	padding: 15px 15px 30px;
+	text-align: center;
+	width:100%;
+}
+
+.buy-btn{
+
+	background-color: #2196f3;
+	border-radius: 3px;
+	display:inline-block;
+	font-size: 18px;
+	padding: 15px 50px;
+	transition: .5s;
+
+}
+
+.buy-btn:hover{
+	border-color: 1px solid #fff;
+	background-color: #3f51b5;
+}
+
+a{
+
+	text-decoration: none!important;
+	color:#fff!important;
+
+}
+
+
+@media (max-width: 480px) and (min-width: 320px) {
+
+
+	.price-content{
+	
+		margin-left: 13%;
+	}
+	
+	
+	}
+
+/****************
+
+   TESTIMONIALS		
+
+*****************/
+
+
+#testimonials{
+
+	padding-top:50px;
+	padding-bottom: 50px;
+}
+
+
+#testimonials .row{
+
+	margin-top:30px;
+}
+
+.col-md-4{
+
+	margin:40px auto;
+}
+
+.profile{
+
+	padding:70px 10px 10px;
+	background-color: #efefef;
+}
+
+
+.user{
+
+	width:120px;
+	height:120px;
+	border-radius: 50%;
+}
+
+
+.profile img{
+
+	top: -60px;
+	position: absolute;
+	left:calc(50% - 60px);
+	border: 10px solid #fff;
+}
+
+
+.profile h3{
+
+	font-size: 20px;
+	margin-top: 15px;
+	color:#007bff;
+}
+
+#testimonials span{
+
+	font-size: 12px;
+	color:#333;
+}
+
+blockquote{
+
+	font-size: 16px;
+	line-height: 30px;
+}
+
+blockquote::before{
+
+	content: '\93';
+	font-size: 50px;
+	color:#007bff;
+	position: relative;
+	line-height: 20px;
+	bottom: -15px;
+	right:5px;
+}
+
+blockquote::after{
+
+	content: '\94';
+	font-size: 50px;
+	color:#007bff;
+	position: relative;
+	line-height: 10px;
+	bottom: -15px;
+	left:5px;
+}
+
+.profile:hover{
+
+	box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+	cursor: pointer;
+	transition: .2s;
+}
+
+
+/****************
+
+   NUMBERS		
+
+*****************/
+
+
+#numbers{
+
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url('../images/Web_Development_Numbers_Background.png');
+	background-size: cover;
+	background-position: center;
+	color:#efefef!important;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#numbers h1{
+
+	color:whitesmoke;
+}
+
+#numbers .join{
+
+	color:whitesmoke!important;
+}
+
+
+#numbers .fa{
+    padding-top: 30%;
+    font-size:40px;
+    color:#f15025;
+}
+
+
+
+
+
+
+
+/****************
+
+   CONTACT		
+
+*****************/
+
+
+#contact{
+
+	background-color: #efefef;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color:#777;
+
+}
+
+.contact-form{
+
+	padding:15px;
+}
+
+.form-control{
+
+	border-radius: 0!important;
+	border:none!important;
+}
+
+::placeholder{
+
+	color:#999!important;
+}
+
+.follow{
+
+	background: #fff;
+	padding: 10px;
+	margin:11px;
+}
+
+.contact-info .fab{
+
+	margin:10px;
+	color:#007bff;
+	font-weight: bold;
+}
+
+
+/****************
+
+   FOOTER		
+
+*****************/
+
+#footer{
+
+	background-color:#333;
+	color:#fff;
+	padding:12px;
+
+}
+
+.far fa-heart{
+
+	margin:3px;
+	color:red;
+}
+
+
+/****************
+
+   BACK TO TOP		
+
+*****************/
+
+
+
+.scrollTop {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	line-height: 55px;
+	border-radius: 50%;
+	text-align: center;
+	background: transparent;
+	color: #000 !important;
+	z-index: 999;
+	transition: .7s;
+	display:none;
+}
+
+.scrollTop:hover {
+	background: black;
+	color: #fff !important;
+}
+
+/* Back to top */
